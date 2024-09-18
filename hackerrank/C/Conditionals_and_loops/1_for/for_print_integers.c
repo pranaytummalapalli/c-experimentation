@@ -3,6 +3,8 @@
 #include <math.h>
 #include <stdlib.h>
 
+//for each integeer in the list between the 
+
 char* arr[11] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "even", "odd"};
 
 void checkformat(int* input){
@@ -18,7 +20,10 @@ void checkformat(int* input){
                 printf("%s\n", arr[9]);
                 break;
             }
-            else printf("%s\n", arr[10]);
+            else if(*input%2 == 1){
+                printf("%s\n", arr[10]);
+                break;
+            }
         }
         else continue;
     }
